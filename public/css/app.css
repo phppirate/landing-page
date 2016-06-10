@@ -1,0 +1,13 @@
+body {
+  padding-top: 60px; }
+
+.fa-btn {
+  margin-right: 6px; }
+
+.jumbotron-hero {
+  height: 500px;
+  background-image: url("/img/background.png");
+  background-position: center center;
+  background-size: cover; }
+
+/*# sourceMappingURL=app.css.map */
