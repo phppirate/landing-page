@@ -11,12 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['middleware' => ['web']], function(){
+    Route::get('/', function () {
+        return view('welcome');
+    });
+
+    Route::auth();
+
+    Route::get('/dashboard', 'DashboardController@index');
+    Route::post('/signup', 'SignUpController@store');
+    Route::get('/thank-you', 'SignUpController@thankYou');
 });
 
-Route::auth();
+Route::group(['prefix' => 'api/v1', 'middleware' => ['api']], function(){
+    Route::resource('permission', 'PermissionController', ['only' => 'index']);
+    Route::resource('role', 'RoleController', ['only' => ['index', 'store']]);
+    Route::patch('role/{role}/attach-permission', 'RoleController@attachPermission');
+    Route::delete('role/{role}/permission', 'RoleController@detachPermission');
 
-Route::get('/home', 'HomeController@index');
-Route::post('/signup', 'SignUpController@store');
-Route::get('/thank-you', 'SignUpController@thankYou');
+    Route::resource('user', 'UserController');
+});

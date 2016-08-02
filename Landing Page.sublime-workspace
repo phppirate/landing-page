@@ -1,0 +1,1956 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"foreach"
+			],
+			[
+				"list-",
+				"list-group-item"
+			],
+			[
+				"sorta",
+				"sortable	(role.js)"
+			],
+			[
+				"permission",
+				"permissions	(role.js)"
+			],
+			[
+				"panel",
+				"panel-heading"
+			],
+			[
+				"panle-",
+				"panel-body"
+			],
+			[
+				"panel-",
+				"panel-default"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"clo",
+				"closeNewRoleModal"
+			],
+			[
+				"newRo",
+				"newRoleName	(role.js)"
+			],
+			[
+				"new",
+				"newRoleReadableName	(role.js)"
+			],
+			[
+				"get",
+				"getRoles"
+			],
+			[
+				"Rol",
+				"Roles	(index.blade.php)"
+			],
+			[
+				"read",
+				"readable_name"
+			],
+			[
+				"Permission",
+				"Permissions	(admin.blade.php)"
+			],
+			[
+				"Permiss",
+				"PermissionController	(PermissionController.php)"
+			],
+			[
+				"bg",
+				"bgp	background-position: ${1:0} ${2:0};"
+			],
+			[
+				"backgroun",
+				"background-size"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"thank",
+				"thank-you"
+			],
+			[
+				"pro",
+				"protected〔keyword〕"
+			],
+			[
+				"Sign",
+				"SignUp	(SignUp.php)"
+			],
+			[
+				"col-md-offse",
+				"col-md-offset-4	(login.blade.php)"
+			],
+			[
+				"form-",
+				"form-horizontal	(login.blade.php)"
+			],
+			[
+				"sc",
+				"script	Tag"
+			],
+			[
+				"cd",
+				"cdev-jquery	Cdev jQuery"
+			],
+			[
+				"Arti",
+				"ArticleGroup"
+			],
+			[
+				"grou",
+				"groupName"
+			],
+			[
+				"open",
+				"openNewGroupModal	(judge-articles.js)"
+			],
+			[
+				"Ar",
+				"ArticleGroup〔namespace〕"
+			],
+			[
+				"Art",
+				"ArticleGroup"
+			],
+			[
+				"Voya",
+				"VoyagerDatabaseSeeder〔class〕"
+			],
+			[
+				"sidebar-",
+				"sidebar-mini"
+			],
+			[
+				"e",
+				"exponent"
+			],
+			[
+				"array_re",
+				"array_reverse〔function〕"
+			],
+			[
+				"arra",
+				"array_map〔function〕"
+			],
+			[
+				"col",
+				"columns"
+			],
+			[
+				"bina",
+				"binaryToDecimal〔function〕"
+			],
+			[
+				"de",
+				"decimal"
+			],
+			[
+				"signup",
+				"signups"
+			],
+			[
+				"array_pu",
+				"array_push〔function〕"
+			],
+			[
+				"sign",
+				"signups"
+			],
+			[
+				"paddin",
+				"padding-bottom	(app.css)"
+			],
+			[
+				"max",
+				"max-height: 〔property〕"
+			],
+			[
+				"b3",
+				"bs3-navbar	bs3-navbar"
+			],
+			[
+				"slu",
+				"slugLoading"
+			],
+			[
+				"vali",
+				"validate-slug/{slug	(routes.php)"
+			],
+			[
+				"arti",
+				"articles	(index.blade.php)"
+			],
+			[
+				"sig",
+				"signupsLeft"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"pr",
+				"progress	(script.js)"
+			],
+			[
+				"var",
+				"var_dump〔function〕"
+			],
+			[
+				"scr",
+				"script"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"box-s",
+				"box-sizing"
+			],
+			[
+				"preo",
+				"progress-container"
+			],
+			[
+				"pre",
+				"progress-container	(style.css)"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"ac",
+				"action	Attr"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"isin",
+				"is_int"
+			],
+			[
+				"month",
+				"monthlyStats"
+			],
+			[
+				"weekly",
+				"weeklyStats"
+			],
+			[
+				"week",
+				"weekStart	(Statistic.php)"
+			],
+			[
+				"year",
+				"yearly"
+			],
+			[
+				"max-",
+				"max-width: 〔property〕"
+			],
+			[
+				"forma",
+				"formated"
+			],
+			[
+				"stat",
+				"stats"
+			],
+			[
+				"create",
+				"created〔function〕"
+			],
+			[
+				"created",
+				"created_at	(Statistic.php)"
+			],
+			[
+				"add",
+				"addMinutes	(Carbon.php)"
+			],
+			[
+				"wee",
+				"weekStart"
+			],
+			[
+				"Sta",
+				"Statistic	(Statistic.php)"
+			],
+			[
+				"tot",
+				"totalCount"
+			],
+			[
+				"to",
+				"todayEnd"
+			],
+			[
+				"pa",
+				"panel-default"
+			],
+			[
+				"main-",
+				"main-content	(welcome.blade.php)"
+			],
+			[
+				"action",
+				"action_text"
+			],
+			[
+				"action_",
+				"action_text	(Notification.php)"
+			],
+			[
+				"list",
+				"listenForNotifications"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"author",
+				"authorized	(routes.php)"
+			],
+			[
+				"reada",
+				"readable"
+			],
+			[
+				"no",
+				"notification"
+			],
+			[
+				"S",
+				"ShouldBroadcast〔namespace〕"
+			],
+			[
+				"art",
+				"articles.testing"
+			],
+			[
+				"un",
+				"unreadAnnouncements"
+			],
+			[
+				"Crea",
+				"CreateAnnouncement"
+			],
+			[
+				"ann",
+				"announcement	(routes.php)"
+			],
+			[
+				"noti",
+				"notification	(AlertWindow.vue)"
+			],
+			[
+				"test",
+				"test-channel"
+			],
+			[
+				"Se",
+				"SentNotification	(routes.php)"
+			],
+			[
+				"Noti",
+				"App\\Notification〔class〕"
+			],
+			[
+				"log",
+				"logins"
+			],
+			[
+				"lo",
+				"logins"
+			],
+			[
+				"v-",
+				"v-if=〔attribute〕"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"csrf",
+				"csrf_field	(edit.blade.php)"
+			],
+			[
+				"Aler",
+				"AlertWindow"
+			],
+			[
+				"Ale",
+				"AlertWindow	(default.js)"
+			],
+			[
+				"cl",
+				"c.l	Console-log"
+			],
+			[
+				"hasUn",
+				"hasUnreadAnnouncements	(AlertWindowController.php)"
+			],
+			[
+				"readAll",
+				"readAllAnnouncements	(AlertWindowController.php)"
+			],
+			[
+				"rea",
+				"readall	(AlertWindow.vue)"
+			],
+			[
+				"showin",
+				"showingAnnouncements"
+			],
+			[
+				"show",
+				"showAnnouncements"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"a",
+				"alert-avatar"
+			],
+			[
+				"unr",
+				"unreadNotifications"
+			],
+			[
+				"ope",
+				"openModal"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"w",
+				"width	(app.scss)"
+			],
+			[
+				"btn-",
+				"btn-group"
+			],
+			[
+				"mo",
+				"modal-docked-right	(testing.blade.php)"
+			],
+			[
+				"modal",
+				"modal-docked"
+			],
+			[
+				"modal-",
+				"modal-dialog	(testing.blade.php)"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"cdev",
+				"cdev-vue	Cdev VueJs"
+			],
+			[
+				"preve",
+				"preventDefault	(README-DETAILED.md)"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"bac",
+				"background: 〔property〕"
+			],
+			[
+				"text-",
+				"text-muted"
+			],
+			[
+				"fon",
+				"font-weight	(welcome.scss)"
+			],
+			[
+				"active",
+				"activeMonth"
+			],
+			[
+				"group",
+				"groupId"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"optimi",
+				"Laravel Artisan 5: Optimize"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"packages",
+				"Package Control: List Packages"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rename f",
+				"ANF: Rename File"
+			],
+			[
+				"control",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"piv",
+				"Laravel Generate 5: Make:Migration:Pivot"
+			],
+			[
+				"pivo",
+				"Laravel Generate 5: Make:Migration:Pivot"
+			],
+			[
+				"mode",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"model",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"auth",
+				"Laravel Artisan 5: Make:Auth"
+			],
+			[
+				"mo",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"migrat",
+				"Laravel Artisan 5: Make:Migration"
+			],
+			[
+				"migrate",
+				"Laravel Artisan 5: Migrate:Rollback"
+			],
+			[
+				"Mod",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"artisan make",
+				"Laravel Artisan 5: Make:Console"
+			],
+			[
+				"cons",
+				"PHPCompanion:Insert Constructor Property"
+			],
+			[
+				"gener",
+				"Laravel Artisan 5: Event:Generate"
+			],
+			[
+				"rename fi",
+				"ANF: Rename File"
+			],
+			[
+				"event",
+				"Laravel Artisan 5: Event:Generate"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"renam",
+				"ANF: Rename File"
+			],
+			[
+				"contr",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"mod",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"te",
+				"Terminal: Open in project folder"
+			],
+			[
+				"open in b",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"snipp",
+				"Snippet: Cdev jQuery"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"clo",
+				"File: Close Others"
+			],
+			[
+				"others",
+				"File: Close Others"
+			],
+			[
+				"close",
+				"File: Close Others"
+			],
+			[
+				"middle",
+				"Laravel Artisan 5: Make:Middleware"
+			],
+			[
+				"controller",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"migra",
+				"Laravel Artisan 5: Migrate"
+			],
+			[
+				"migration",
+				"Laravel Artisan 5: Make:Migration"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"open",
+				"PHP Class browser: Open Browser"
+			],
+			[
+				"php ",
+				"PHP Class browser: (Re)Create Database"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"midd",
+				"Laravel Artisan 5: Make:Middleware"
+			],
+			[
+				"constru",
+				"PHPCompanion:Insert Constructor Property"
+			],
+			[
+				"impo",
+				"SublimeCodeIntel: Dump Import Directories"
+			],
+			[
+				"find",
+				"PHPCompanion:Find Use"
+			],
+			[
+				"renamef",
+				"ANF: Rename File"
+			],
+			[
+				"pa",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"stat",
+				"View: Toggle Status Bar"
+			],
+			[
+				"wrap",
+				"Emmet: Wrap With Abbreviation"
+			],
+			[
+				"tags",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"browser",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"gutter",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"make",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"contro",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"controll",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"ma",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"rename",
+				"Laravel Artisan 5: Make:Migration"
+			],
+			[
+				"format",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"tab",
+				"View: Toggle Tabs"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"Mode",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"artisan",
+				"Laravel Artisan 5: Make:Migration"
+			],
+			[
+				"makeCon",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"tag",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"view",
+				"File: New View into File"
+			],
+			[
+				"mi",
+				"Laravel Artisan 5: Migrate:Rollback"
+			],
+			[
+				"make mo",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"got to",
+				"PHPCompanion:Goto Definition Scope"
+			],
+			[
+				"line",
+				"Emmet: Merge Lines"
+			],
+			[
+				"colo",
+				"Colorsublime: Browse Themes"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"tabs",
+				"View: Toggle Tabs"
+			],
+			[
+				"do",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"docblo",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"dock",
+				"Snippet: Start Docblock"
+			],
+			[
+				"phpcompanion",
+				"PHPCompanion:Goto Definition Scope"
+			],
+			[
+				"PHP companion",
+				"PHPCompanion:Import Namespace"
+			],
+			[
+				"codein",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"simple",
+				"SublimeCodeIntel: Enable Live Autocompletion for Current Language"
+			],
+			[
+				"PHP Code Sniffer: ",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"bui",
+				"Build With: PSR2"
+			],
+			[
+				"sniff",
+				"PHP Coding Standards Fixer: Fix this file (PHP-CS-Fixer)"
+			],
+			[
+				"project",
+				"Project: Add Folder"
+			],
+			[
+				"art ma",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"extra",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"artmig",
+				"Laravel Artisan 5: Migrate"
+			],
+			[
+				"artmamod",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"maut",
+				"Laravel Artisan 5: Make:Auth"
+			],
+			[
+				"ANF ",
+				"ANF: Rename File"
+			],
+			[
+				"ta",
+				"View: Toggle Tabs"
+			],
+			[
+				"paext",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"rena",
+				"Preferences: Browse Packages"
+			],
+			[
+				"rename ",
+				"ANF: Rename File"
+			],
+			[
+				"delete",
+				"ANF: Delete Current File"
+			],
+			[
+				"art make:a",
+				"Laravel Artisan 5: Make:Auth"
+			],
+			[
+				"artisan makemo",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"artisan makemi",
+				"Laravel Artisan 5: Make:Migration"
+			],
+			[
+				"paconrem",
+				"Package Control: Remove Package"
+			],
+			[
+				"php csni",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"stf",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"svg logo",
+				"Snippet: SVG Logo Stack Overflow"
+			],
+			[
+				"Snippet: ",
+				"Snippet: |orderBy"
+			],
+			[
+				"dpl",
+				"Origami: Destroy Pane on the Left"
+			],
+			[
+				"anf",
+				"ANF: Copy Current File"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"unin",
+				"Plugin Development: Profile Events"
+			],
+			[
+				"add",
+				"Package Control: Add Repository"
+			],
+			[
+				"sideba",
+				"View: Toggle Side Bar"
+			],
+			[
+				"fu",
+				"PHPCompanion:Find Use"
+			],
+			[
+				"ef",
+				"PHPCompanion:Expand Fully Qualified Class Name"
+			],
+			[
+				":ef",
+				"PHPCompanion:Expand Fully Qualified Class Name"
+			],
+			[
+				"pack ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"arti",
+				"Laravel Artisan: Up"
+			],
+			[
+				"inp",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 891.0,
+		"history":
+		[
+			"pwd",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/sam/Sites/Laravel/landing-page"
+	],
+	"file_history":
+	[
+		"/Users/sam/Sites/Laravel/landing-page/resources/assets/js/role.js",
+		"/Users/sam/Sites/Laravel/landing-page/Landing Page.sublime-project",
+		"/Users/sam/Sites/Laravel/landing-page/public/js/role.js",
+		"/Users/sam/Sites/Laravel/landing-page/resources/views/dashboard/role/index.blade.php",
+		"/Users/sam/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/sam/Sites/Laravel/landing-page/public/js/role.js.map",
+		"/Users/sam/Sites/Laravel/landing-page/app/Http/Controllers/RoleController.php",
+		"/Users/sam/Sites/Laravel/landing-page/app/Http/routes.php",
+		"/Users/sam/Sites/Laravel/landing-page/resources/views/layouts/admin.blade.php",
+		"/Users/sam/Sites/Laravel/landing-page/app/Http/Controllers/PermissionController.php",
+		"/Users/sam/Sites/Laravel/landing-page/gulpfile.js",
+		"/Users/sam/Sites/Laravel/landing-page/package.json",
+		"/Users/sam/Sites/Laravel/landing-page/resources/assets/js/roles.js",
+		"/Users/sam/Sites/Laravel/landing-page/resources/views/dashboard/permission/index.blade.php",
+		"/Users/sam/Sites/Laravel/landing-page/resources/views/admin/home.blade.php",
+		"/Users/sam/Sites/Laravel/landing-page/database/migrations/2016_06_10_233609_create_permissions_table.php",
+		"/Users/sam/Sites/Laravel/landing-page/database/migrations/2016_06_10_233712_create_roles_table.php",
+		"/Users/sam/Sites/Laravel/landing-page/config/app.php",
+		"/Users/sam/Sites/Laravel/landing-page/database/migrations/2016_06_10_234322_create_role_user_pivot_table.php",
+		"/Users/sam/Sites/Laravel/landing-page/app/Providers/AppServiceProvider.php",
+		"/Users/sam/Sites/Laravel/landing-page/resources/views/layouts/app.blade.php",
+		"/Users/sam/Sites/Laravel/landing-page/app/Http/Controllers/HomeController.php",
+		"/Users/sam/Sites/Laravel/landing-page/public/shift/css/shift.css",
+		"/Users/sam/Desktop/Shift 2.0/index.php",
+		"/Users/sam/Sites/Laravel/landing-page/database/migrations/2016_06_10_210535_create_sign_ups_table.php",
+		"/Users/sam/Sites/Laravel/landing-page/.env",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/resources/views/welcome.blade.php",
+		"/Users/sam/Desktop/practice/index.php",
+		"/Users/sam/Desktop/practice/assets/css/app.css",
+		"/Users/sam/Sites/Laravel/hidalgo365/resources/views/admin/article-types/preview.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/resources/assets/js/mixins/HandlesAlerts.js",
+		"/Users/sam/Sites/Laravel/hidalgo365/app/Http/Controllers/ArticleController.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/resources/views/articles/index.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/resources/assets/js/judge-articles.js",
+		"/Users/sam/Sites/Laravel/hidalgo365/app/User.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/app/Http/Controllers/JudgeArticleController.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/resources/assets/js/user.js",
+		"/Users/sam/Sites/Laravel/hidalgo365/app/Http/routes.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/app/ArticleGroup.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/app/helpers.php",
+		"/Users/sam/Sites/Laravel/m4pm/app/TCG/Voyager/views/login.blade.php",
+		"/Users/sam/Sites/Laravel/m4pm/database/seeds/VoyagerDatabaseSeeder.php",
+		"/Users/sam/Sites/Laravel/m4pm/resources/views/index.blade.php",
+		"/Users/sam/Sites/Laravel/m4pm/app/TCG/Voyager/views/master.blade.php",
+		"/Users/sam/Sites/Laravel/m4pm/config/app.php",
+		"/Users/sam/Sites/Laravel/m4pm/resources/views/master.blade.php",
+		"/Users/sam/Sites/Laravel/m4pm/resources/views/login.blade.php",
+		"/Users/sam/Sites/Laravel/m4pm/resources/views/auth/login.blade.php",
+		"/Users/sam/Sites/Laravel/m4pm/resources/views/layouts/app.blade.php",
+		"/Users/sam/Sites/Laravel/m4pm/.env",
+		"/Users/sam/Sites/Laravel/m4pm/composer.json",
+		"/Users/sam/Sites/Laravel/m4pm/app/Http/routes.php",
+		"/Users/sam/Sites/Laravel/m4pm/app/Http/Kernel.php",
+		"/Users/sam/Sites/Laravel/m4pm/database/seeds/DatabaseSeeder.php",
+		"/Users/sam/Sites/Laravel/m4pm/resources/views/welcome.blade.php",
+		"/Users/sam/.zshrc",
+		"/Users/sam/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/sam/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/app/SignUpLink.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/app/Http/Controllers/AdminController.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/app/Http/routes.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/resources/views/layouts/admin.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/public/css/app.css",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/database/migrations/2016_05_23_213410_create_signups_table.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/resources/views/about.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/resources/views/layouts/main.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/config/services.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/database/migrations/2016_06_06_133251_create_sign_up_links_table.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/resources/views/articles/show.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/resources/views/layouts/judge.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/resources/assets/js/default.js",
+		"/Users/sam/Sites/Laravel/hidalgo365/database/migrations/2016_05_25_155943_create_articles_table.php",
+		"/Users/sam/Desktop/test_file_upload/assets/js/script.js",
+		"/Users/sam/Desktop/test_file_upload/assets/css/style.css",
+		"/Users/sam/Desktop/test_file_upload/index.php",
+		"/Users/sam/Desktop/test_file_upload/process.php",
+		"/Users/sam/Sites/Laravel/project/app/Console/Kernel.php",
+		"/Users/sam/Sites/Laravel/project/vendor/jorenvanhocht/blogify/config/blogify.php",
+		"/Users/sam/Sites/Laravel/project/config/app.php",
+		"/Users/sam/Sites/Laravel/project/.env",
+		"/Users/sam/Sites/Laravel/hidalgo-connect/public/uploads/profile_images/medium/1464922929-|+|-new-avatar.jpg",
+		"/Users/sam/Sites/Laravel/hidalgo-connect/database/migrations/2016_02_25_194418_create_chats_table.php",
+		"/Users/sam/Sites/Laravel/hidalgo-connect/database/migrations/2016_02_22_221542_add_cat_for_key_to_resource.php",
+		"/Users/sam/Sites/Laravel/hidalgo-connect/database/migrations/2016_02_22_221026_create_resources_table.php",
+		"/Users/sam/Sites/Laravel/hidalgo-connect/database/migrations/2016_02_21_172520_create_articles_table.php",
+		"/Users/sam/Sites/Laravel/hidalgo-connect/database/migrations/2016_02_20_190939_create_likes_table.php",
+		"/Users/sam/Sites/Laravel/hidalgo-connect/database/migrations/2016_02_19_154031_create_user_follows_stall_table.php",
+		"/Users/sam/Sites/Laravel/hidalgo-connect/.env",
+		"/Users/sam/Sites/Laravel/hidalgo-connect/database/migrations/2015_12_04_214314_create_stalls_table.php",
+		"/Users/sam/Sites/Laravel/hidalgo-connect/database/migrations/2015_12_05_023800_create_posts_table.php",
+		"/Users/sam/Sites/Laravel/hidalgo-connect/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/Users/sam/Library/Application Support/Sublime Text 3/Packages/User/Plain text.sublime-settings",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/resources/views/layouts/app.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/resources/views/thank-you.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/resources/views/already-signed-up.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/resources/views/layouts/app.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/app/Http/Controllers/UserController.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/resources/views/welcome/about.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/resources/views/layouts/welcome.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/public/css/welcome.css",
+		"/Users/sam/Sites/Laravel/hidalgo365/resources/views/partials/navbar-auth.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/app/Providers/AppServiceProvider.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/resources/views/welcome/index.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/database/migrations/2016_05_25_233957_create_article_types_table.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/config/database.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/config/mail.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/.env",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/config/app.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/vendor/nesbot/carbon/src/Carbon/Carbon.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/database/migrations/2016_05_29_191312_create_statistics_table.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/resources/views/dashboard.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/app/Statistic.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/resources/views/auth/login.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/app/Console/Kernel.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/app/SignUp.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/app/Console/Commands/GenerateStats.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/app/Http/Controllers/HomeController.php",
+		"/Users/sam/Sites/Laravel/hidalgo365landing/resources/views/home.blade.php",
+		"/Users/sam/Sites/Laravel/hidalgo365/.env",
+		"/Users/sam/Sites/Laravel/hidalgo365/resources/views/layouts/admin.blade.php",
+		"/Users/sam/Sites/Laravel/savvy365/app/helpers.php",
+		"/Users/sam/Sites/Laravel/savvy365/app/Notification.php",
+		"/Users/sam/Sites/Laravel/savvy365/app/User.php"
+	],
+	"find":
+	{
+		"height": 48.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"btn btn-xs",
+			"li",
+			"ul",
+			"fa",
+			"this",
+			"\"",
+			"readable_name",
+			"Readable",
+			"permission",
+			"div",
+			"#",
+			"Email",
+			"name",
+			"Full Name",
+			"Savvy",
+			"this",
+			"name",
+			"Name",
+			"name",
+			"string",
+			"');\n",
+			"{{ VOYAGER_ASSETS_PATH }}",
+			"null",
+			"tcg\\voyager",
+			"TCG\\Voyager",
+			"tcg\\voyager",
+			"opt",
+			"+K",
+			"i",
+			"true",
+			"\"",
+			"signups",
+			"button",
+			"star",
+			"<?",
+			"day",
+			"week",
+			"yearly",
+			"monthly",
+			"weekly",
+			"data",
+			"panel-default",
+			"signups",
+			"Sam",
+			"#",
+			"p",
+			"savvy",
+			"savvy365",
+			"null",
+			"body",
+			"announcement",
+			"this",
+			"notification",
+			"Notification",
+			"notification",
+			"Notification",
+			"notification",
+			"Notification",
+			"notification",
+			"event",
+			"server",
+			"data",
+			"vm",
+			"-",
+			"text",
+			"creator",
+			"notifications",
+			"not",
+			"Announcements",
+			"text",
+			"user",
+			"bor",
+			"tip",
+			"alerts",
+			" style=\"width: 50%\"",
+			"left{",
+			"2",
+			"rotateX",
+			"transfrom",
+			"Mom!",
+			"div",
+			"cuser()",
+			"0",
+			"5599ff",
+			"item",
+			"let",
+			"article",
+			"mini",
+			"$tip",
+			"article",
+			"type",
+			"<!",
+			"#0",
+			"judge",
+			"h1",
+			"block",
+			"blcok",
+			"pt Mono",
+			"shirt_size",
+			"'",
+			"medium",
+			"male",
+			"female",
+			"gender",
+			"Name",
+			"name",
+			"Name",
+			"spotsLeft",
+			"Challenge",
+			"p",
+			"activeYear()",
+			"h2",
+			"p",
+			"email",
+			"$app",
+			" use ($app)",
+			"$app",
+			"thank-you",
+			"name",
+			"100",
+			"255",
+			"assets",
+			"blue",
+			"pink",
+			"today()->format('m')",
+			"VueRouter",
+			"'",
+			"h2"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Input Mono",
+			"",
+			"Caviar Dreams",
+			"vjs-mission-4-skin"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 48.0
+	},
+	"input":
+	{
+		"height": 66.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 275.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "Landing Page.sublime-project",
+	"replace":
+	{
+		"height": 92.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rerole.js",
+				"resources/assets/js/role.js"
+			],
+			[
+				"roles.",
+				"public/js/role.js"
+			],
+			[
+				"roindexbla",
+				"resources/views/dashboard/role/index.blade.php"
+			],
+			[
+				"roles",
+				"resources/assets/js/role.js"
+			],
+			[
+				"perm",
+				"app/Http/Controllers/PermissionController.php"
+			],
+			[
+				"permission",
+				"app/Permission.php"
+			],
+			[
+				"rol",
+				"app/Role.php"
+			],
+			[
+				"route",
+				"app/Http/routes.php"
+			],
+			[
+				"role",
+				"resources/assets/js/role.js"
+			],
+			[
+				"admin",
+				"resources/views/layouts/admin.blade.php"
+			],
+			[
+				"index.bla",
+				"resources/views/dashboard/role/index.blade.php"
+			],
+			[
+				"routes",
+				"app/Http/routes.php"
+			],
+			[
+				"indebla",
+				"resources/views/dashboard/permission/index.blade.php"
+			],
+			[
+				"home",
+				"resources/views/admin/home.blade.php"
+			],
+			[
+				"app",
+				"config/app.php"
+			],
+			[
+				"apps",
+				"app/Providers/AppServiceProvider.php"
+			],
+			[
+				"permisstable",
+				"database/migrations/2016_06_10_233609_create_permissions_table.php"
+			],
+			[
+				"app.bla",
+				"resources/views/layouts/app.blade.php"
+			],
+			[
+				"shift",
+				"public/shift/css/shift.css"
+			],
+			[
+				"app.bl",
+				"resources/views/layouts/app.blade.php"
+			],
+			[
+				"signups",
+				"database/migrations/2016_06_10_210535_create_sign_ups_table.php"
+			],
+			[
+				"login",
+				"resources/views/auth/login.blade.php"
+			],
+			[
+				"welcome",
+				"resources/views/welcome.blade.php"
+			],
+			[
+				"sign",
+				"app/SignUp.php"
+			],
+			[
+				"user",
+				"app/User.php"
+			],
+			[
+				"signco",
+				"app/Http/Controllers/SignUpsController.php"
+			],
+			[
+				"wecomcon",
+				"app/Http/Controllers/WelcomeController.php"
+			],
+			[
+				"welcom",
+				"resources/views/welcome.blade.php"
+			],
+			[
+				"app.",
+				"assets/css/app.css"
+			],
+			[
+				"judge",
+				"app/Http/Controllers/JudgeArticleController.php"
+			],
+			[
+				"article.php",
+				"app/Article.php"
+			],
+			[
+				"article.pl",
+				"resources/views/admin/article-types/preview.blade.php"
+			],
+			[
+				"articlegrou",
+				"app/ArticleGroup.php"
+			],
+			[
+				"user.php",
+				"app/User.php"
+			],
+			[
+				"article",
+				"resources/views/articles/index.blade.php"
+			],
+			[
+				"hand",
+				"resources/assets/js/mixins/HandlesAlerts.js"
+			],
+			[
+				"user.",
+				"resources/assets/js/user.js"
+			],
+			[
+				"master",
+				"app/TCG/Voyager/views/master.blade.php"
+			],
+			[
+				"data",
+				"database/seeds/DatabaseSeeder.php"
+			],
+			[
+				"ker",
+				"app/Http/Kernel.php"
+			],
+			[
+				"compose",
+				"composer.json"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"admin.bla",
+				"resources/views/layouts/admin.blade.php"
+			],
+			[
+				"silink",
+				"app/SignUpLink.php"
+			],
+			[
+				"services",
+				"config/services.php"
+			],
+			[
+				"silin",
+				"app/SignUpLink.php"
+			],
+			[
+				"createsign",
+				"database/migrations/2016_06_06_133251_create_sign_up_links_table.php"
+			],
+			[
+				"articles/in",
+				"resources/views/articles/index.blade.php"
+			],
+			[
+				"createarticle",
+				"database/migrations/2016_05_25_155943_create_articles_table.php"
+			],
+			[
+				"/default.js",
+				"resources/assets/js/default.js"
+			],
+			[
+				"article/s",
+				"resources/views/articles/show.blade.php"
+			],
+			[
+				"app.cs",
+				"public/css/app.css"
+			],
+			[
+				"rout",
+				"app/Http/routes.php"
+			],
+			[
+				"scr",
+				"assets/js/script.js"
+			],
+			[
+				"dasboa",
+				"vendor/jorenvanhocht/blogify/src/Controllers/Admin/DashboardController.php"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"createstall",
+				"database/migrations/2015_12_04_214314_create_stalls_table.php"
+			],
+			[
+				"about",
+				"resources/views/welcome/about.blade.php"
+			],
+			[
+				"welcombe.",
+				"resources/views/layouts/welcome.blade.php"
+			],
+			[
+				"indexbla",
+				"resources/views/articles/index.blade.php"
+			],
+			[
+				"nav",
+				"resources/views/partials/navbar-auth.blade.php"
+			],
+			[
+				"wel",
+				"resources/views/layouts/welcome.blade.php"
+			],
+			[
+				"appser",
+				"app/Providers/AppServiceProvider.php"
+			],
+			[
+				"indexbal",
+				"resources/views/welcome/index.blade.php"
+			],
+			[
+				"appse",
+				"app/Providers/AppServiceProvider.php"
+			],
+			[
+				"mail",
+				"config/mail.php"
+			],
+			[
+				"serv",
+				"config/services.php"
+			],
+			[
+				"creates",
+				"database/migrations/2016_05_29_235517_create_signups_table.php"
+			],
+			[
+				"statis",
+				"database/migrations/2016_05_29_191312_create_statistics_table.php"
+			],
+			[
+				"stat",
+				"app/Statistic.php"
+			],
+			[
+				"createstat",
+				"database/migrations/2016_05_29_191312_create_statistics_table.php"
+			],
+			[
+				"userstable",
+				"database/migrations/2014_10_12_000000_create_users_table.php"
+			],
+			[
+				"noti",
+				"app/Notification.php"
+			],
+			[
+				"helper",
+				"app/helpers.php"
+			],
+			[
+				"appbla",
+				"resources/views/layouts/app.blade.php"
+			],
+			[
+				"testin.bla",
+				"resources/views/articles/testing.blade.php"
+			],
+			[
+				"testing",
+				"resources/assets/js/testing.js"
+			],
+			[
+				"handles",
+				"resources/assets/js/mixins/HandlesAlerts.js"
+			],
+			[
+				"",
+				"resources/assets/js/mixins/HandlesAlerts.js"
+			],
+			[
+				"createa",
+				"app/Events/CreateAnnouncement.php"
+			],
+			[
+				"announ",
+				"app/Announcement.php"
+			],
+			[
+				"alert",
+				"resources/assets/js/components/AlertWindow.vue"
+			],
+			[
+				"han",
+				"resources/assets/js/mixins/HandlesAlerts.js"
+			],
+			[
+				"socke",
+				"socket.js"
+			],
+			[
+				"testbla",
+				"resources/views/articles/testing.blade.php"
+			],
+			[
+				"testin",
+				"resources/assets/js/testing.js"
+			],
+			[
+				"testingbla",
+				"resources/views/articles/testing.blade.php"
+			],
+			[
+				"broa",
+				"config/broadcasting.php"
+			],
+			[
+				"app.s",
+				"resources/assets/sass/app.scss"
+			],
+			[
+				"br",
+				"config/broadcasting.php"
+			],
+			[
+				"bro",
+				"config/broadcasting.php"
+			],
+			[
+				"servi",
+				"config/services.php"
+			],
+			[
+				"service",
+				"config/services.php"
+			],
+			[
+				"dash",
+				"resources/views/admin/dashboard.blade.php"
+			],
+			[
+				"asstesting.js",
+				"resources/assets/js/testing.js"
+			],
+			[
+				"assdefault.js",
+				"resources/assets/js/default.js"
+			],
+			[
+				"default",
+				"public/js/default.js"
+			],
+			[
+				"ann",
+				"app/Announcement.php"
+			],
+			[
+				"edit",
+				"resources/views/user/profile/edit.blade.php"
+			],
+			[
+				"testing.j",
+				"resources/assets/js/testing.js"
+			],
+			[
+				"aler",
+				"app/Http/Controllers/AlertWindowController.php"
+			],
+			[
+				"annou",
+				"app/Announcement.php"
+			],
+			[
+				"tip",
+				"resources/assets/sass/tips.scss"
+			],
+			[
+				"testing.",
+				"resources/assets/js/testing.js"
+			],
+			[
+				"judg.js",
+				"resources/assets/js/judging.js"
+			],
+			[
+				"judgjs",
+				"public/js/judge-articles.js"
+			],
+			[
+				"usersta",
+				"database/migrations/2014_10_12_000000_create_users_table.php"
+			],
+			[
+				"userp",
+				"app/User.php"
+			],
+			[
+				"tip.s",
+				"resources/assets/sass/tips.scss"
+			],
+			[
+				"gul",
+				"gulpfile.js"
+			],
+			[
+				"app.sc",
+				"resources/assets/sass/app.scss"
+			],
+			[
+				"navbar",
+				"resources/views/partials/navbar-auth.blade.php"
+			],
+			[
+				"anounta",
+				"database/migrations/2016_05_27_133955_create_announcements_table.php"
+			],
+			[
+				"announcemen",
+				"app/Announcement.php"
+			],
+			[
+				"notificationta",
+				"database/migrations/2016_05_27_133728_create_notifications_table.php"
+			],
+			[
+				"test.bla",
+				"resources/views/articles/testing.blade.php"
+			],
+			[
+				"abou",
+				"resources/views/welcome/about.blade.php"
+			],
+			[
+				"giti",
+				".gitignore"
+			],
+			[
+				"gitig",
+				".gitignore"
+			],
+			[
+				"year",
+				"resources/views/partials/user/year-photo-viewer.blade.php"
+			],
+			[
+				"useryear",
+				"resources/views/partials/user/user-year-photo-viewer.blade.php"
+			],
+			[
+				"user/",
+				"resources/views/user/show.blade.php"
+			],
+			[
+				"yeaphoto",
+				"resources/views/partials/user/year-photo-viewer.blade.php"
+			],
+			[
+				"9fdb6e9825ab4d8c5dcc864eda05a52e29cb10ac",
+				"storage/framework/views/9fdb6e9825ab4d8c5dcc864eda05a52e29cb10ac.php"
+			],
+			[
+				"useryea",
+				"resources/views/partials/user/user-year-photo-viewer.blade.php"
+			],
+			[
+				"month",
+				"app/Month.php"
+			],
+			[
+				"ad/da",
+				"resources/views/admin/dashboard.blade.php"
+			],
+			[
+				"user/s",
+				"resources/views/user/show.blade.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 296.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}
