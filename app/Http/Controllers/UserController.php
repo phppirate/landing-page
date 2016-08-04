@@ -35,6 +35,7 @@ class UserController extends Controller
         ]);
 
         $user = new User($request->all());
+        $user->password = bcrypt($request->get('password'));
         $user->save();
         return $user;
     }
@@ -47,7 +48,7 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        return $user;
+        return $user->load('roles');
     }
 
     /**

@@ -16641,7 +16641,7 @@ _laravuejsRouter2.default.setRoutes(_routes2.default);
 
 _laravuejsRouter2.default.start("#dashboard");
 
-},{"./routes":64,"laravuejs-router":58,"vue":60,"vue-resource":2,"vue-router":3}],62:[function(require,module,exports){
+},{"./routes":67,"laravuejs-router":58,"vue":60,"vue-resource":2,"vue-router":3}],62:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16861,6 +16861,118 @@ if (module.hot) {(function () {  module.hot.accept()
   }
 })()}
 },{"babel-runtime/core-js/get-iterator":4,"sortablejs":1,"vue":60,"vue-hot-reload-api":59}],64:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    methods: {
+        handleSubmittion: function handleSubmittion(e) {
+            e.preventDefault();
+            var form = e.srcElement;
+            var data = new FormData(form);
+            this.$http.post('/api/v1/user', data).then(function (r) {
+                console.success(r.data);
+            }).catch(function (e) {
+                console.error(e);
+            });
+        }
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"panel panel-default\">\n    <h1 class=\"panel-heading\" style=\"margin-top: 0;\">Creat User</h1>\n    <div class=\"panel-body\">\n        <form @submit=\"handleSubmittion\" class=\"form-horizontal\">\n            <!-- Name Form Field -->\n            <fieldset class=\"form-group\">\n                <label for=\"name\" class=\"control-label col-md-4\">Name</label>\n                <div class=\"col-md-8\">\n                    <input type=\"text\" class=\"form-control\" name=\"name\" id=\"name\">\n                </div>\n            </fieldset>\n\n            <!-- Email Form Field -->\n            <fieldset class=\"form-group\">\n                <label for=\"email\" class=\"control-label col-md-4\">Email</label>\n                <div class=\"col-md-8\">\n                    <input type=\"email\" class=\"form-control\" name=\"email\" id=\"email\">\n                </div>\n            </fieldset>\n\n            <!-- Password Form Field -->\n            <fieldset class=\"form-group\">\n                <label for=\"password\" class=\"control-label col-md-4\">Password</label>\n                <div class=\"col-md-8\">\n                    <input type=\"password\" class=\"form-control\" name=\"password\" id=\"password\">\n                </div>\n            </fieldset>\n\n            <!-- Password Confirmation Form Field -->\n            <fieldset class=\"form-group\">\n                <label for=\"password_confirmation\" class=\"control-label col-md-4\">Password Confirmation</label>\n                <div class=\"col-md-8\">\n                    <input type=\"password\" class=\"form-control\" name=\"password_confirmation\" id=\"password_confirmation\">\n                </div>\n            </fieldset>\n\n            <!-- Title Form Field -->\n            <fieldset class=\"form-group\">\n                <div class=\"col-md-8 col-md-offset-4\">\n                    <button type=\"submit\" class=\"btn btn-success\">Create</button>\n                </div>\n            </fieldset>\n\n        </form>\n    </div>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-6587aa88", module.exports)
+  } else {
+    hotAPI.update("_v-6587aa88", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":60,"vue-hot-reload-api":59}],65:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    data: function data() {
+        return {
+            users: []
+        };
+    },
+
+    methods: {
+        getUsers: function getUsers() {
+            var _this = this;
+
+            this.$http.get('api/v1/user').then(function (r) {
+                _this.users = r.data;
+            }).catch(function (e) {
+                console.error(e);
+            });
+        }
+    },
+    ready: function ready() {
+        this.getUsers();
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"panel panel-default\">\n    <h1 class=\"panel-heading\">Users</h1>\n    <div class=\"list-group\">\n        <a v-link=\"'users/' + user.id\" class=\"list-group-item\" v-for=\"user in users\">\n            {{ user.name }}\n            <span class=\"pull-right text-muted\">\n                {{ user.email }}\n            </span>\n        </a>\n    </div>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-1e1d2842", module.exports)
+  } else {
+    hotAPI.update("_v-1e1d2842", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":60,"vue-hot-reload-api":59}],66:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    data: function data() {
+        return {
+            user: {}
+        };
+    },
+
+    methods: {
+        getUser: function getUser() {
+            var _this = this;
+
+            this.$http.get('/api/v1/user/' + this.$route.params.userId).then(function (r) {
+                _this.user = r.data;
+            }).catch(function (e) {
+                console.error(e);
+            });
+        }
+    },
+    ready: function ready() {
+        this.getUser();
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"row\">\n    <div class=\"col-md-4\">\n        <div class=\"panel panel-default\">\n            <div class=\"panel-heading\">{{ user.name }}</div>\n            <div class=\"panel-body\">\n                <dl>\n                    <dt>Email</dt>\n                    <dd>{{ user.email }}</dd>\n                    <dt>Roles</dt>\n                    <dd>\n                        <ul>\n                            <li v-for=\"role in user.roles\">{{ role.slug }}</li>\n                        </ul>\n                    </dd>\n                </dl>\n            </div>\n        </div>\n    </div>\n    <div class=\"col-md-8\">\n        <div class=\"panel panel-default\">\n            <div class=\"panel-heading\">Activities</div>\n            <div class=\"list-group\">\n                <div class=\"list-group-item\">\n                    <span class=\"activity-date text-muted\">4 hours ago</span> Activity Name\n                    <span class=\"pull-right label label-primary\">activity entity</span>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-fa2eb386", module.exports)
+  } else {
+    hotAPI.update("_v-fa2eb386", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":60,"vue-hot-reload-api":59}],67:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16879,13 +16991,28 @@ var _index3 = require("./controllers/PermissionsController/index.vue");
 
 var _index4 = _interopRequireDefault(_index3);
 
+var _index5 = require("./controllers/UsersController/index.vue");
+
+var _index6 = _interopRequireDefault(_index5);
+
+var _create = require("./controllers/UsersController/create.vue");
+
+var _create2 = _interopRequireDefault(_create);
+
+var _show = require("./controllers/UsersController/show.vue");
+
+var _show2 = _interopRequireDefault(_show);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _laravuejsRouter2.default.make('/roles', _index2.default);
 _laravuejsRouter2.default.make('/permissions', _index4.default);
+_laravuejsRouter2.default.make('/users', _index6.default);
+_laravuejsRouter2.default.make('/users/:userId', _show2.default);
+_laravuejsRouter2.default.make('/users/create', _create2.default);
 
 exports.default = _laravuejsRouter2.default.all();
 
-},{"./controllers/PermissionsController/index.vue":62,"./controllers/RolesController/index.vue":63,"laravuejs-router":58}]},{},[61]);
+},{"./controllers/PermissionsController/index.vue":62,"./controllers/RolesController/index.vue":63,"./controllers/UsersController/create.vue":64,"./controllers/UsersController/index.vue":65,"./controllers/UsersController/show.vue":66,"laravuejs-router":58}]},{},[61]);
 
 //# sourceMappingURL=app.js.map

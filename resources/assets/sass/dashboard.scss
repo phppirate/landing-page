@@ -1,0 +1,19 @@
+.panel-heading{
+    margin: 0;
+}
+.hover-active .parent-hover.expand{
+}
+.hover-active:hover .parent-hover.expand{
+    opacity: 1;
+}
+
+
+dl{
+    dt{
+        padding: 5px;
+        background: #fafafa;
+    }
+    dd{
+        padding: 5px;
+    }
+}

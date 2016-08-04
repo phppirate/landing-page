@@ -1,0 +1,14 @@
+.panel-heading {
+  margin: 0; }
+
+.hover-active:hover .parent-hover.expand {
+  opacity: 1; }
+
+dl dt {
+  padding: 5px;
+  background: #fafafa; }
+
+dl dd {
+  padding: 5px; }
+
+/*# sourceMappingURL=dashboard.css.map */

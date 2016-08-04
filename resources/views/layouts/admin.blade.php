@@ -5,7 +5,7 @@
     <title>Admin</title>
     <link rel="stylesheet" type="text/css" href="/shift/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/shift/css/themify-icons.css">
-    <link rel="stylesheet" type="text/css" href="/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="/css/dashboard.css">
     <link rel="stylesheet" type="text/css" href="/css/toastr.min.css">
     <link rel="stylesheet" type="text/css" href="/shift/css/shift.css">
 </head>
