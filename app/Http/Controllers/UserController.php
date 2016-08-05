@@ -62,7 +62,7 @@ class UserController extends Controller
     {
         $user->update($request->all());
 
-        if($request->get('roles')){
+        if ($request->get('roles')) {
             // $roles = collect($request->get('roles'));
             // $roles = $roles->map(function($id){
             //     return Role::findOrFail($id);

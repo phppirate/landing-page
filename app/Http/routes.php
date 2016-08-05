@@ -11,7 +11,7 @@
 |
 */
 
-Route::group(['middleware' => ['web']], function(){
+Route::group(['middleware' => ['web']], function () {
     Route::get('/', function () {
         return view('welcome');
     });
@@ -23,7 +23,7 @@ Route::group(['middleware' => ['web']], function(){
     Route::get('/thank-you', 'SignUpController@thankYou');
 });
 
-Route::group(['prefix' => 'api/v1', 'middleware' => ['api']], function(){
+Route::group(['prefix' => 'api/v1', 'middleware' => ['api']], function () {
     Route::resource('permission', 'PermissionController', ['only' => 'index']);
     Route::resource('role', 'RoleController', ['only' => ['index', 'store']]);
     Route::patch('role/{role}/attach-permission', 'RoleController@attachPermission');
