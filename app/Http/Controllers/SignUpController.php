@@ -8,10 +8,9 @@ use Illuminate\Http\Request;
 
 class SignUpController extends Controller
 {
-    
-
     public function store(Request $request)
     {
+        // dd($request->all());
         $signup = new SignUp($request->all());
         $signup->save();
         return redirect('/thank-you');

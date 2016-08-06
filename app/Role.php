@@ -9,7 +9,7 @@ class Role extends Model
 {
     use HasSlug;
 
-    protected $fillable = ['name'];
+    protected $fillable = ['name', 'slug'];
 
     public function permissions()
     {

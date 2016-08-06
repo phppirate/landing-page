@@ -30,4 +30,5 @@ Route::group(['prefix' => 'api/v1', 'middleware' => ['api']], function () {
     Route::delete('role/{role}/permission', 'RoleController@detachPermission');
 
     Route::resource('user', 'UserController');
+    Route::resource('signup', 'SignUpsApiController');
 });

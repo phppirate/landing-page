@@ -16641,7 +16641,7 @@ _laravuejsRouter2.default.setRoutes(_routes2.default);
 
 _laravuejsRouter2.default.start("#dashboard");
 
-},{"./routes":67,"laravuejs-router":58,"vue":60,"vue-resource":2,"vue-router":3}],62:[function(require,module,exports){
+},{"./routes":69,"laravuejs-router":58,"vue":60,"vue-resource":2,"vue-router":3}],62:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16867,6 +16867,86 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.default = {
+    data: function data() {
+        return {
+            signUps: []
+        };
+    },
+
+    methods: {
+        getSignUps: function getSignUps() {
+            var _this = this;
+
+            this.$http.get('/api/v1/signup').then(function (r) {
+                _this.signUps = r.data;
+            }).catch(function (e) {
+                console.error(e);
+            });
+        }
+    },
+    ready: function ready() {
+        this.getSignUps();
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"panel panel-default\">\n    <div class=\"panel-heading\">\n        Sign Ups\n        <span class=\"pull-right\">{{ signUps.length }}</span>\n    </div>\n    <div class=\"list-group\">\n        <a v-for=\"signUp in signUps\" v-link=\"'sign-ups/' + signUp.id\" class=\"list-group-item\">\n            {{ signUp.first_name }} {{ signUp.last_name }}\n            <span class=\"pull-right text-muted\">{{ signUp.email }}</span>\n        </a>\n    </div>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-685a9f96", module.exports)
+  } else {
+    hotAPI.update("_v-685a9f96", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":60,"vue-hot-reload-api":59}],65:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    data: function data() {
+        return {
+            signUp: {}
+        };
+    },
+
+    methods: {
+        getSignUp: function getSignUp() {
+            var _this = this;
+
+            this.$http.get('/api/v1/signup/' + this.$route.params.signUpId).then(function (r) {
+                _this.signUp = r.data;
+            }).catch(function (e) {
+                console.error(e);
+            });
+        }
+    },
+    ready: function ready() {
+        this.getSignUp();
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"row\">\n    <div class=\"col-md-4\">\n        <div class=\"panel panel-default\">\n            <div class=\"panel-heading\">\n                Sign Up Details\n            </div>\n            <div class=\"panel-body\">\n                <img src=\"https://www.gravatar.com/avatar/{{ signUp.emailHash }}\" width=\"80px\" height=\"80px\" alt=\"\" class=\"center-block img-circle\" style=\"margin-bottom: 18px;\">\n                <dl>\n                    <dt>Name</dt>\n                    <dd>{{ signUp.first_name }} {{ signUp.last_name }}</dd>\n                    <dt>Email</dt>\n                    <dd>{{ signUp.email }}</dd>\n                    <dt>Company</dt>\n                    <dd>{{ signUp.company ? signUp.company : 'None'  }}</dd>\n                    <dt>Position</dt>\n                    <dd>{{ signUp.position ? signUp.position : 'None'  }}</dd>\n                </dl>\n            </div>\n        </div>\n    </div>\n    \n    <div class=\"col-md-8\">\n        <div class=\"panel panel-default\">\n            <div class=\"panel-body\">\n                <ul class=\"nav nav-tabs\">\n                    <li class=\"active\"><a href=\"#core\" data-toggle=\"tab\">Core Information</a></li>\n                    <li><a href=\"#social\" data-toggle=\"tab\">Social Information</a></li>\n                    <li class=\"pull-right\"><a href=\"#notes\" data-toggle=\"tab\">Notes</a></li>\n                </ul>\n                <!-- CORE TAB PANE -->\n                <div class=\"tab-content\">\n                    <div class=\"tab-pane active\" id=\"core\">\n                        <dl>\n                            <dt>Phone</dt>\n                            <dd>{{ signUp.phone ? signUp.phone : 'None'  }}</dd>\n                            <dt>Mobile</dt>\n                            <dd>{{ signUp.mobile ? signUp.mobile : 'None'  }}</dd>\n                            <dt>Fax</dt>\n                            <dd>{{ signUp.fax ? signUp.fax : 'None'  }}</dd>\n                            <dt>Address Line 1</dt>\n                            <dd>{{ signUp.address1 ? signUp.address1 : 'None'  }}</dd>\n                            <dt>Address Line 2</dt>\n                            <dd>{{ signUp.address2 ? signUp.address2 : 'None'  }}</dd>\n                            <dt>City</dt>\n                            <dd>{{ signUp.city ? signUp.city : 'None'  }}</dd>\n                            <dt>State</dt>\n                            <dd>{{ signUp.state ? signUp.state : 'None'  }}</dd>\n                            <dt>Zipcode</dt>\n                            <dd>{{ signUp.zip ? signUp.zip : 'None'  }}</dd>\n                            <dt>Country</dt>\n                            <dd>{{ signUp.country ? signUp.country : 'None'  }}</dd>\n                            <dt>Website</dt>\n                            <dd>{{ signUp.website ? signUp.website : 'None'  }}</dd>\n                        </dl>\n                    </div>\n\n                    <!-- SOCIAL TAB PANE -->\n                    <div class=\"tab-pane\" id=\"social\">\n                        <dl>\n                            <dt>Twitter</dt>\n                            <dd>{{ signUp.twitter ? signUp.twitter : 'None'  }}</dd>\n                            <dt>Google+</dt>\n                            <dd>{{ signUp.google_plus ? signUp.google_plus : 'None'  }}</dd>\n                            <dt>Skype</dt>\n                            <dd>{{ signUp.skype ? signUp.skype : 'None'  }}</dd>\n                            <dt>LinkedIn</dt>\n                            <dd>{{ signUp.linked_in ? signUp.linked_in : 'None'  }}</dd>\n                            <dt>Instagram</dt>\n                            <dd>{{ signUp.instagram ? signUp.instagram : 'None'  }}</dd>\n                            <dt>Foursquare</dt>\n                            <dd>{{ signUp.foursquare ? signUp.foursquare : 'None'  }}</dd>\n                        </dl>\n                    </div>\n\n                    <!-- NOTES TAB PANE -->\n                    <div class=\"tab-pane\" id=\"notes\">\n                        <h2>Notes</h2>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-5f38d3ea", module.exports)
+  } else {
+    hotAPI.update("_v-5f38d3ea", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":60,"vue-hot-reload-api":59}],66:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
     methods: {
         handleSubmittion: function handleSubmittion(e) {
             e.preventDefault();
@@ -16892,7 +16972,7 @@ if (module.hot) {(function () {  module.hot.accept()
     hotAPI.update("_v-6587aa88", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
-},{"vue":60,"vue-hot-reload-api":59}],65:[function(require,module,exports){
+},{"vue":60,"vue-hot-reload-api":59}],67:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -16932,7 +17012,7 @@ if (module.hot) {(function () {  module.hot.accept()
     hotAPI.update("_v-1e1d2842", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
-},{"vue":60,"vue-hot-reload-api":59}],66:[function(require,module,exports){
+},{"vue":60,"vue-hot-reload-api":59}],68:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -16941,7 +17021,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = {
     data: function data() {
         return {
-            user: {}
+            user: {},
+            roles: []
         };
     },
 
@@ -16954,14 +17035,37 @@ exports.default = {
             }).catch(function (e) {
                 console.error(e);
             });
+        },
+        getRoles: function getRoles() {
+            var _this2 = this;
+
+            this.$http.get('/api/v1/role/').then(function (r) {
+                _this2.roles = r.data;
+            }).catch(function (e) {
+                console.error(e);
+            });
+        },
+        saveUser: function saveUser(e) {
+            var _this3 = this;
+
+            var form = e.srcElement;
+            var data = new FormData(form);
+            form.reset();
+            $('#editUser').modal('hide');
+            this.$http.post('/api/v1/user/' + this.$route.params.userId, data).then(function (r) {
+                _this3.user = r.data;
+            }).catch(function (e) {
+                console.error(e);
+            });
         }
     },
     ready: function ready() {
         this.getUser();
+        this.getRoles();
     }
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"row\">\n    <div class=\"col-md-4\">\n        <div class=\"panel panel-default\">\n            <div class=\"panel-heading\">{{ user.name }}</div>\n            <div class=\"panel-body\">\n                <dl>\n                    <dt>Email</dt>\n                    <dd>{{ user.email }}</dd>\n                    <dt>Roles</dt>\n                    <dd>\n                        <ul>\n                            <li v-for=\"role in user.roles\">{{ role.slug }}</li>\n                        </ul>\n                    </dd>\n                </dl>\n            </div>\n        </div>\n    </div>\n    <div class=\"col-md-8\">\n        <div class=\"panel panel-default\">\n            <div class=\"panel-heading\">Activities</div>\n            <div class=\"list-group\">\n                <div class=\"list-group-item\">\n                    <span class=\"activity-date text-muted\">4 hours ago</span> Activity Name\n                    <span class=\"pull-right label label-primary\">activity entity</span>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"row\">\n    <div class=\"col-md-4\">\n        <div class=\"panel panel-default\">\n            <div class=\"panel-heading\">\n                {{ user.name }} \n                <!-- Button trigger modal -->\n                <button type=\"button\" class=\"btn btn-primary btn-xs pull-right\" data-toggle=\"modal\" data-target=\"#editUser\">\n                    Edit User\n                </button>\n            </div>\n            <div class=\"panel-body\">\n                <dl>\n                    <dt>Email</dt>\n                    <dd>{{ user.email }}</dd>\n                    <dt>Roles</dt>\n                    <dd>\n                        <ul>\n                            <li v-for=\"role in user.roles\">{{ role.slug }}</li>\n                        </ul>\n                    </dd>\n                </dl>\n            </div>\n        </div>\n    </div>\n    <div class=\"col-md-8\">\n        <div class=\"panel panel-default\">\n            <div class=\"panel-heading\">Activities</div>\n            <div class=\"list-group\">\n                <div class=\"list-group-item\">\n                    <span class=\"activity-date text-muted\">4 hours ago</span> Activity Name\n                    <span class=\"pull-right label label-primary\">activity entity</span>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n<!-- Edit Modal -->\n<div class=\"modal fade\" id=\"editUser\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\">\n    <div class=\"modal-dialog\" role=\"document\">\n        <div class=\"modal-content\">\n            <div class=\"modal-header\">\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span></button>\n                <h4 class=\"modal-title\" id=\"myModalLabel\">Edit User</h4>\n            </div>\n            <div class=\"modal-body\">\n                <form @submit.prevent=\"saveUser\" action=\"/api/v1/user/{{ user.id }}\" class=\"form-horizontal clearfix\" method=\"post\">\n                    <input type=\"hidden\" name=\"_method\" value=\"PATCH\">\n                    <!-- Name Form Field -->\n                    <fieldset class=\"form-group\">\n                        <label for=\"name\" class=\"control-label col-md-4\">Name</label>\n                        <div class=\"col-md-8\">\n                            <input type=\"text\" class=\"form-control\" name=\"name\" id=\"name\" :value=\"user.name\">\n                        </div>\n                    </fieldset>\n\n                    <!-- Email Form Field -->\n                    <fieldset class=\"form-group\">\n                        <label for=\"email\" class=\"control-label col-md-4\">Email</label>\n                        <div class=\"col-md-8\">\n                            <input type=\"email\" class=\"form-control\" name=\"email\" id=\"email\" :value=\"user.email\">\n                        </div>\n                    </fieldset>\n                    \n                    <div class=\"col-md-8 col-md-offset-4\">\n                        <h4>Roles</h4>\n                        <label v-for=\"role in roles\" class=\"form-control\">\n                            <input type=\"checkbox\" name=\"roles[]\" :value=\"role.id\">\n                            {{ role.name }}\n                        </label>\n                    </div>\n\n                    <div class=\"col-md-8 col-md-offset-4\">\n                        <br>\n                        <button type=\"submit\" class=\"btn btn-success\">Save</button>\n                    </div>\n                </form>\n            </div>\n        </div>\n    </div>\n</div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
@@ -16972,7 +17076,7 @@ if (module.hot) {(function () {  module.hot.accept()
     hotAPI.update("_v-fa2eb386", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
-},{"vue":60,"vue-hot-reload-api":59}],67:[function(require,module,exports){
+},{"vue":60,"vue-hot-reload-api":59}],69:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17003,6 +17107,14 @@ var _show = require("./controllers/UsersController/show.vue");
 
 var _show2 = _interopRequireDefault(_show);
 
+var _index7 = require("./controllers/SignUpsController/index.vue");
+
+var _index8 = _interopRequireDefault(_index7);
+
+var _show3 = require("./controllers/SignUpsController/show.vue");
+
+var _show4 = _interopRequireDefault(_show3);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _laravuejsRouter2.default.make('/roles', _index2.default);
@@ -17011,8 +17123,11 @@ _laravuejsRouter2.default.make('/users', _index6.default);
 _laravuejsRouter2.default.make('/users/:userId', _show2.default);
 _laravuejsRouter2.default.make('/users/create', _create2.default);
 
+_laravuejsRouter2.default.make('/sign-ups', _index8.default);
+_laravuejsRouter2.default.make('/sign-ups/:signUpId', _show4.default);
+
 exports.default = _laravuejsRouter2.default.all();
 
-},{"./controllers/PermissionsController/index.vue":62,"./controllers/RolesController/index.vue":63,"./controllers/UsersController/create.vue":64,"./controllers/UsersController/index.vue":65,"./controllers/UsersController/show.vue":66,"laravuejs-router":58}]},{},[61]);
+},{"./controllers/PermissionsController/index.vue":62,"./controllers/RolesController/index.vue":63,"./controllers/SignUpsController/index.vue":64,"./controllers/SignUpsController/show.vue":65,"./controllers/UsersController/create.vue":66,"./controllers/UsersController/index.vue":67,"./controllers/UsersController/show.vue":68,"laravuejs-router":58}]},{},[61]);
 
 //# sourceMappingURL=app.js.map

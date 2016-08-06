@@ -14,11 +14,19 @@
 
                 <div class="panel-body">
                     {!! Form::open(['url' => '/signup', 'method' => 'POST', 'class' => 'form-horizontal']) !!}
-                        <!-- Full Name Form Field -->
+                        <!-- First Name Form Field -->
                         <fieldset class="form-group">
-                            {!! Form::label('name', 'Full Name', ['class' => 'control-label col-md-4']) !!}
+                            {!! Form::label('first_name', 'First Name', ['class' => 'control-label col-md-4']) !!}
                             <div class="col-md-6">
-                                {!! Form::text('name', null, ['class' => 'form-control']) !!}
+                                {!! Form::text('first_name', null, ['class' => 'form-control']) !!}
+                            </div>
+                        </fieldset>
+
+                        <!-- Last Name Form Field -->
+                        <fieldset class="form-group">
+                            {!! Form::label('last_name', 'Last Name', ['class' => 'control-label col-md-4']) !!}
+                            <div class="col-md-6">
+                                {!! Form::text('last_name', null, ['class' => 'form-control']) !!}
                             </div>
                         </fieldset>
 
