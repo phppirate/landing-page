@@ -16641,7 +16641,7 @@ _laravuejsRouter2.default.setRoutes(_routes2.default);
 
 _laravuejsRouter2.default.start("#dashboard");
 
-},{"./routes":69,"laravuejs-router":58,"vue":60,"vue-resource":2,"vue-router":3}],62:[function(require,module,exports){
+},{"./routes":71,"laravuejs-router":58,"vue":60,"vue-resource":2,"vue-router":3}],62:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -16941,6 +16941,168 @@ if (module.hot) {(function () {  module.hot.accept()
   }
 })()}
 },{"vue":60,"vue-hot-reload-api":59}],66:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    data: function data() {
+        return {
+            links: []
+        };
+    },
+
+    methods: {
+        getLinks: function getLinks() {
+            var _this = this;
+
+            this.$http.get('/api/v1/trackable-link').then(function (r) {
+                _this.links = r.data;
+                _this.$nextTick(function () {
+                    this.prepCharts();
+                });
+            }).catch(function (e) {
+                console.error(e);
+            });
+        },
+        prepCharts: function prepCharts() {
+
+            var labels = this.links.map(function (item) {
+                return item.name;
+            });
+
+            var clicks = this.links.map(function (item) {
+                return item.clicks.length;
+            });
+
+            var signUps = this.links.map(function (item) {
+                return item.sign_ups.length;
+            });
+
+            var data = {
+                labels: labels,
+                datasets: [{
+                    label: "Clicks",
+                    fillColor: "rgba(52,59,66,1)",
+                    strokeColor: "rgba(52,59,66,1)",
+                    highlightFill: "rgba(220,220,220,0.75)",
+                    highlightStroke: "rgba(220,220,220,1)",
+                    data: clicks
+                }, {
+                    label: "Sign Ups",
+                    fillColor: "rgba(0,150,228,1)",
+                    strokeColor: "rgba(0,150,228,1)",
+                    highlightFill: "rgba(220,220,220,0.75)",
+                    highlightStroke: "rgba(220,220,220,1)",
+                    data: signUps
+                }]
+            };
+            var el = document.getElementById('metrics').getContext("2d");
+            var chart = new Chart(el).Bar(data, {
+                responsive: true,
+                maintainAspectRatio: false,
+                height: "400px"
+            });
+        }
+    },
+    ready: function ready() {
+        this.getLinks();
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"panel panel-default\">\n    <div class=\"panel-heading\">Metrics</div>\n    <div class=\"panel-body\" style=\"height: 420px\">\n        <canvas id=\"metrics\" width=\"600\" height=\"400\"></canvas>\n    </div>\n</div>\n<div class=\"panel panel-default\">\n    <h1 class=\"panel-heading\">Trackable Links</h1>\n    <div class=\"list-group\">\n        <a v-for=\"link in links\" v-link=\"'/trackable-links/' + link.id\" class=\"list-group-item\">\n            {{ link.name }}\n            <div class=\"pull-right\">\n                <span class=\"ti ti-hand-point-up\"></span>\n                <span class=\"badge\">{{ link.clicks.length }}</span>\n            </div>\n        </a>\n    </div>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-85998730", module.exports)
+  } else {
+    hotAPI.update("_v-85998730", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":60,"vue-hot-reload-api":59}],67:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    data: function data() {
+        return {
+            link: {}
+        };
+    },
+
+    methods: {
+        getLink: function getLink() {
+            var _this = this;
+
+            this.$http.get('/api/v1/trackable-link/' + this.$route.params.trackableLinkId).then(function (r) {
+                _this.link = r.data;
+                _this.$nextTick(function () {
+                    this.prepCharts();
+                });
+            }).catch(function (e) {
+                console.error(e);
+            });
+        },
+        prepCharts: function prepCharts() {
+
+            var labels = ['1', '2', '3', '4', '5'];
+
+            var clicks = this.link.clicks.map(function (click) {
+                return click.created_at;
+            });
+
+            var signUps = this.link.sign_ups.map(function (sign_up) {
+                return sign_up.created_at;
+            });
+
+            var data = {
+                labels: labels,
+                datasets: [{
+                    label: "Clicks",
+                    fillColor: "rgba(52,59,66,1)",
+                    strokeColor: "rgba(52,59,66,1)",
+                    highlightFill: "rgba(220,220,220,0.75)",
+                    highlightStroke: "rgba(220,220,220,1)",
+                    data: clicks
+                }, {
+                    label: "Sign Ups",
+                    fillColor: "rgba(0,150,228,1)",
+                    strokeColor: "rgba(0,150,228,1)",
+                    highlightFill: "rgba(220,220,220,0.75)",
+                    highlightStroke: "rgba(220,220,220,1)",
+                    data: signUps
+                }]
+            };
+            var el = document.getElementById('metrics').getContext("2d");
+            var chart = new Chart(el).Bar(data, {
+                responsive: true,
+                maintainAspectRatio: false,
+                height: "400px"
+            });
+        }
+    },
+    ready: function ready() {
+        this.getLink();
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"panel panel-default\">\n    <div class=\"panel-heading\">{{ link.name }} - Metrics</div>\n    <div class=\"panel-body\" style=\"height: 420px\">\n        <canvas id=\"metrics\" width=\"600\" height=\"400\"></canvas>\n    </div>\n</div>\n<div class=\"row\">\n    <div class=\"col-md-6\">\n        <div class=\"panel panel-default\">\n            <div class=\"panel-heading\">Clicks</div>\n            <div class=\"list-group\">\n                \n            </div>\n        </div>\n    </div>\n    <div class=\"col-md-6\">\n        <div class=\"panel panel-default\">\n            <div class=\"panel-heading\">Sign Ups</div>\n            <div class=\"list-group\">\n                \n            </div>\n        </div>\n    </div>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-df671552", module.exports)
+  } else {
+    hotAPI.update("_v-df671552", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":60,"vue-hot-reload-api":59}],68:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -16972,7 +17134,7 @@ if (module.hot) {(function () {  module.hot.accept()
     hotAPI.update("_v-6587aa88", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
-},{"vue":60,"vue-hot-reload-api":59}],67:[function(require,module,exports){
+},{"vue":60,"vue-hot-reload-api":59}],69:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -17012,7 +17174,7 @@ if (module.hot) {(function () {  module.hot.accept()
     hotAPI.update("_v-1e1d2842", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
-},{"vue":60,"vue-hot-reload-api":59}],68:[function(require,module,exports){
+},{"vue":60,"vue-hot-reload-api":59}],70:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -17076,7 +17238,7 @@ if (module.hot) {(function () {  module.hot.accept()
     hotAPI.update("_v-fa2eb386", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
-},{"vue":60,"vue-hot-reload-api":59}],69:[function(require,module,exports){
+},{"vue":60,"vue-hot-reload-api":59}],71:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17115,6 +17277,14 @@ var _show3 = require("./controllers/SignUpsController/show.vue");
 
 var _show4 = _interopRequireDefault(_show3);
 
+var _index9 = require("./controllers/TrackableLinksController/index.vue");
+
+var _index10 = _interopRequireDefault(_index9);
+
+var _show5 = require("./controllers/TrackableLinksController/show.vue");
+
+var _show6 = _interopRequireDefault(_show5);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _laravuejsRouter2.default.make('/roles', _index2.default);
@@ -17126,8 +17296,11 @@ _laravuejsRouter2.default.make('/users/create', _create2.default);
 _laravuejsRouter2.default.make('/sign-ups', _index8.default);
 _laravuejsRouter2.default.make('/sign-ups/:signUpId', _show4.default);
 
+_laravuejsRouter2.default.make('/trackable-links', _index10.default);
+_laravuejsRouter2.default.make('/trackable-links/:trackableLinkId', _show6.default);
+
 exports.default = _laravuejsRouter2.default.all();
 
-},{"./controllers/PermissionsController/index.vue":62,"./controllers/RolesController/index.vue":63,"./controllers/SignUpsController/index.vue":64,"./controllers/SignUpsController/show.vue":65,"./controllers/UsersController/create.vue":66,"./controllers/UsersController/index.vue":67,"./controllers/UsersController/show.vue":68,"laravuejs-router":58}]},{},[61]);
+},{"./controllers/PermissionsController/index.vue":62,"./controllers/RolesController/index.vue":63,"./controllers/SignUpsController/index.vue":64,"./controllers/SignUpsController/show.vue":65,"./controllers/TrackableLinksController/index.vue":66,"./controllers/TrackableLinksController/show.vue":67,"./controllers/UsersController/create.vue":68,"./controllers/UsersController/index.vue":69,"./controllers/UsersController/show.vue":70,"laravuejs-router":58}]},{},[61]);
 
 //# sourceMappingURL=app.js.map

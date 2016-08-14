@@ -61,7 +61,7 @@
                 <div class="nav-right">
                     <div class="accout-info">
                         <a href="#0" class="user">
-                            <img src="{{ get_gravatar(auth()->user()->email) }}">
+                            {{-- <img src="{{ get_gravatar(auth()->user()->email) }}"> --}}
                             <div>{{ auth()->user()->name }}</div>
                         </a>
                     </div>
@@ -75,6 +75,7 @@
     <script src="/js/jquery.min.js"></script>
     <script src="/js/toastr.min.js"></script>
     <script src="/shift/js/bootstrap.min.js"></script>
+    <script src="/js/chart.min.js"></script>
     <script src="/shift/js/app.js"></script>
     <script src="/js/app.js"></script>
     @yield('scripts')

@@ -31,4 +31,5 @@ Route::group(['prefix' => 'api/v1', 'middleware' => ['api']], function () {
 
     Route::resource('user', 'UserController');
     Route::resource('signup', 'SignUpsApiController');
+    Route::resource('trackable-link', 'TrackableLinksController', ['only' => ['index', 'show']]);
 });
